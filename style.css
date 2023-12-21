@@ -1,0 +1,43 @@
+/* Element styles */
+body {
+    background-image: url(imgs/brown-dirt.jpg);
+    background-size: contain;
+}
+main {
+    text-align: center;
+}
+
+/* Flex-container styles */
+.container {
+    display: flex;
+}
+
+/* Card styles */
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("imgs/grass-block.png");
+    background-size: cover;
+}
+
+.block p {
+    margin: 0;
+    color: white;   
+}
+
+
+/* Additional styles if needed */
+.wrap {
+    flex-wrap: wrap;
+}
+.gap {
+    gap: 20px;
+}
+
+.center {
+    justify-content: center;
+}
