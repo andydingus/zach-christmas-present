@@ -2,7 +2,7 @@
 body {
     background-image: url(imgs/brown-dirt.jpg);
     background-size: contain;
-
+    color: white;
 }
 
 /* Additional styles if needed */
@@ -34,8 +34,7 @@ body {
     height: 640px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
+    grid-gap: 20px;
 }
 
 .block {
@@ -60,7 +59,7 @@ body {
     background-color: white;
 }
 
-.block:hover {
+.above:hover {
     translate: 0px -10px;
 }
 
@@ -94,5 +93,9 @@ body {
     grid-column: 3;
 }
 
+/* Animations */
+@keyframes remove-gap {
+    50% {row-gap: 0;}    
+}
 
 
